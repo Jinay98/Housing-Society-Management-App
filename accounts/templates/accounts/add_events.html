@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+    <title>Add Events</title>
+{% endblock %}
+
+
+{% block body %}
+
+        <div class="container">
+            <div class="container" align="center"><b>
+        <br><br>
+                <p style="font-size: 50px">Add Events</p>
+            </b></div>
+            <form class="form-horizontal" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <br><br><br><br>
+                    <label class="control-label col-sm-2" for="name" style="font-size:20px">Name of Event:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" placeholder="Name of Event"
+                               name="name"
+                               style="font-size: 18px"/>
+                        <br><br>
+                    </div>
+                    <label class="control-label col-sm-2" for="description" style="font-size:20px;">Description of
+                        Event:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="description" placeholder="Description of Event"
+                               name="description"
+                               style="font-size: 18px"/>
+                        <br><br>
+                    </div>
+                    <label class="control-label col-sm-2" for="date" style="font-size:20px">Date of Event:</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="date" placeholder="Date of Event"
+                               name="date"
+                               style="font-size: 18px"/>
+                        <br><br>
+                    </div>
+                    <label class="control-label col-sm-2" for="funds" style="font-size:20px">Funds Used:</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="funds"
+                               placeholder="Funds Used in Rs." name="funds"
+                               style="font-size: 18px"/>
+                        <br><br>
+                    </div>
+                    <label class="control-label col-sm-2" for="location" style="font-size:20px">Location of
+                        Event:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="location" placeholder="Location of Event"
+                               name="location"
+                               style="font-size: 18px"/>
+                        <br><br>
+                    </div>
+
+                    <label class="control-label col-sm-2" for="image" style="font-size:20px">Image of
+                        Event:</label>
+                    <div class="col-sm-10">
+                        <input type="file" class="form-control" id="image" placeholder="Image of Event"
+                               name="image"
+                               style="font-size: 18px"/>
+                        <br><br>
+                    </div>
+
+                    <div class="container" align="center">
+                        <input type="Submit" id="Submit" onclick="handleSubmit()" name="Submit" value="Submit"
+                               class="btn btn-primary"/><br><br>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        </div>
+
+        </div>
+
+{% endblock %}
+
+
+
+
+
+

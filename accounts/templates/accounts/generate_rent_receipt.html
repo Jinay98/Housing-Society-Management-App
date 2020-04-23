@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+    <title>Society Member Details</title>
+{% endblock %}
+
+
+{% block body %}
+    <div class="container">
+        <br><br>
+        <div class="container" align="center"><b>
+            <p style="font-size: 50px">Generate Rent Receipt</p>
+        </b>
+        </div>
+        <br><br>
+
+        <div class="container">
+            {% for dict_item in list_of_members %}
+                <div class="row">
+                    <div class="col-lg-12" style="margin:auto">
+                        <div class="card blue darken-1">
+                            <div class="card-content yellow-text">
+
+                                &nbsp;
+                                <div class="container" align="center" style="font-size: 25px;">
+                                    {% for key, value in dict_item.items %}
+
+
+                                        {% if key == 'name' %}
+                                            <span class="card-title" align="center"
+                                                  style="font-size: 50px">{{ value }}</span>
+                                            &nbsp;
+
+                                        {% elif key == 'designation' %}
+                                            <p>Designation : {{ value }}</p>
+                                        {% elif key == 'phone' %}
+                                            <p>Phone No: {{ value }}</p>
+                                        {% elif key == 'age' %}
+                                            <p>Age : {{ value }}</p>
+                                        {% elif key == 'address' %}
+                                            <p>Address : {{ value }}</p>
+
+                                        {% endif %}
+
+                                    {% endfor %}
+                                    {% if user.is_superuser %}
+                                        <div class="card-action" align="center">
+                                            {% csrf_token %}
+                                            <button class="waves-effect waves-light btn-large orange"
+                                                    onclick="generateRentReceipt({{ dict_item }})">Generate Receipt
+                                            </button>
+
+                                        </div>{% else %}
+                                        <p> Only Admin can generate Rent Receipts</p>
+                                    {% endif %}
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            {% endfor %}
+
+        </div>
+    </div>
+    <script>
+        function generateRentReceipt(value) {
+            console.log(value);
+            data = JSON.stringify(value);
+            $.ajax({
+                url: "http://localhost:8000/account/download_rent_receipt/",
+                type: "POST",
+                contentType: "application/json",
+                data: data,
+                success: function (d) {
+                    alert("Rent Receipt has been downloaded Successfully!");
+                    window.location.reload();
+                }
+            });
+
+        }
+
+
+    </script>
+{% endblock %}
+
