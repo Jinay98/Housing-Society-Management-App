@@ -45,4 +45,50 @@ This page is used to display all the events that are added by the society member
 ![event_details](https://user-images.githubusercontent.com/32198451/80205266-ede18000-8647-11ea-9e4f-28ace2c1295b.png)
 <br/><br/>
 
+## 6.) View Society Members: <br/><br/>
+Very often we don't know the people living in our society. Hence this page gives us detailed information about all members living in the society with fields  like name, age, designation and address. <br/>
+![society_member_details](https://user-images.githubusercontent.com/32198451/80205418-3731cf80-8648-11ea-9b1d-6dd50ea83100.png)
+<br/><br/>
+
+## 7.) Generate Rent Receipt : <br/><br/>
+This feature is ONLY for the Super Users of the system such as the Chairman, Treasurer, President, Vice President etc. They can issue rent receipts to all the members of the society by just clicking a button. A PDF is generated in the name of that society member using a third party API named “pdfcrowd”<br/>
+### For Users having Admin Privileges : <br/>
+![generate_rent_receipt](https://user-images.githubusercontent.com/32198451/80205637-97c10c80-8648-11ea-86d0-52bf16a61ad3.png)
+<br/><br/>
+
+### For Normal Users: <br/>
+![rent_receipt_2](https://user-images.githubusercontent.com/32198451/80205679-a7d8ec00-8648-11ea-867c-a474810189eb.png)
+<br/><br/>
+
+### Rent Receipt: <br/>
+![rent_receipt](https://user-images.githubusercontent.com/32198451/80205710-b2938100-8648-11ea-9be1-b642148eb631.png)
+<br/><br/>
+
+## 8.) View Profile Details: <br/><br/>
+The user can see his profile details and also see if he has paid the monthly rent 
+ <br/>
+![profile](https://user-images.githubusercontent.com/32198451/80205916-18800880-8649-11ea-9c58-3718c2449359.png)
+<br/><br/>
+
+
+## 9.) Edit Profile Page: <br/><br/>
+The user can edit his profile by changing his Email First Name and Last Name
+ <br/>
+![edit_profile](https://user-images.githubusercontent.com/32198451/80205941-22097080-8649-11ea-8d7c-b0bbb5d9dd06.png)
+<br/><br/>
+
+## 10.) Change Password Page: <br/><br/>
+The user can change his password by entering his old password and the new password
+ <br/>
+![change_password](https://user-images.githubusercontent.com/32198451/80206122-6f85dd80-8649-11ea-808c-8d3008b136c4.png)
+<br/><br/>
+
+
+## 11.) Logout Page: <br/><br/>
+Landing Page when the user decides to log out
+ <br/>
+![logout](https://user-images.githubusercontent.com/32198451/80206141-7a407280-8649-11ea-9fd6-fa4827142f64.png)
+<br/><br/>
+
+
 
