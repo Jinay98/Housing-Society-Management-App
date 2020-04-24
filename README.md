@@ -26,3 +26,23 @@ d.) The password can’t be entirely numeric. <br/>
 <br/>
 ![register](https://user-images.githubusercontent.com/32198451/80204792-20d74400-8647-11ea-9c7f-00605fb96990.png)
 <br/><br/>
+
+## 3.) Home Page: <br/><br/>
+If the user is a new user then a detailed form is shown at the home page for the user to fill containing details like Designation, Address, Age, Phone No. and Display Picture.<br/>
+![home_2](https://user-images.githubusercontent.com/32198451/80204999-85929e80-8647-11ea-9d3c-5b529b584e95.png)
+<br/><br/>
+If the user has already filled the above form all the information is updated accordingly in the user profile page and the next time he comes on the home page a brief description of the Society along with its image is displayed.<br/>
+![home_1](https://user-images.githubusercontent.com/32198451/80205036-96dbab00-8647-11ea-9365-052f51a25ea2.png)
+<br/><br/>
+
+## 4.) Add Event Page: <br/><br/>
+This page is present to add any important event that is going to take place in the society such as a Birthday Party, Festival Celebration or a Society meeting etc. The user can simply add the event details including the Title, Description, Date, Location of Event, Image of Event etc. and notify other society members to come for the event. <br/>
+![add_event](https://user-images.githubusercontent.com/32198451/80205224-df936400-8647-11ea-9e31-bf0cbce26643.png)
+<br/><br/>
+
+## 5.) Event Detail Page: <br/><br/>
+This page is used to display all the events that are added by the society members in the descending order of date. <br/>
+![event_details](https://user-images.githubusercontent.com/32198451/80205266-ede18000-8647-11ea-9e4f-28ace2c1295b.png)
+<br/><br/>
+
+
