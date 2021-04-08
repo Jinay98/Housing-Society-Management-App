@@ -10,7 +10,7 @@ cryptography==3.3.2
 cupshelpers==1.0
 defer==1.0.6
 distro-info===0.18ubuntu0.18.04.1
-Django==3.0.7
+Django==3.0.14
 django-cors-headers==3.2.1
 django-filter==2.2.0
 djangorestframework==3.11.0
