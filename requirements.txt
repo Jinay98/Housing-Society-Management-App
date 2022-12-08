@@ -3,7 +3,7 @@ asgiref==3.2.7
 asn1crypto==0.24.0
 astroid==2.3.3
 Brlapi==0.6.6
-certifi==2018.1.18
+certifi==2022.12.7
 chardet==3.0.4
 command-not-found==0.3
 cryptography==3.3.2
